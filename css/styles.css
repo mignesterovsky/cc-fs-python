@@ -114,12 +114,3 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
 
 /*----------------------NOSOTROS----------------------*/
 
-.nosotros h1{
-    color: #fff;
-    align-items: center;
-    margin-left: 800px;
-    
-}
-.nosotros p{
-    color: #fff;
-}
