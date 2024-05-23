@@ -1,193 +1,272 @@
 /* Estilos generales */
-@charset "UTF-8";
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Roboto Slab", serif;
-}
 body {
-    width: 100%;
-    height: 100%;
     font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    color: #000;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-main{
-    background-color: #070122;
-}
+
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+.nav-link {
+    color: #000;
+    padding: 10px;
     text-decoration: none;
-    color: #fff;
+    font-weight: bold;
 }
 
-main {
+.nav-link:hover {
+    color: #fff;
+    background-color: #FFC107;
+    border-radius: 5px;
+}
+
+.menu-hamburguesa {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#mobileMenu {
+    display: none;
+}
+
+.banner {
+    background-color: #FFD700;
+    background: url('../img/banner.png') no-repeat center center;
+    background-size: cover;
+    color: #FFF;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    color: #000;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.productos-grid {
     padding: 20px;
-    height: 900px;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.producto p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.producto button {
+    background-color: #FFC107;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.producto button:hover {
+    background-color: #FFA000;
+    color: #FFF;
 }
 
 footer {
-    background-color: #333;
+    background-color: #FFD700;
     padding: 10px;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-    
-}
-footer h3{
-    color: #fff;
-    margin-top: 10px;
-}
-.redes_footer {
-    margin-top: 10px;
 }
 
-.redes_footer a {
-    margin: 0 10px;
+/* Estilos para el formulario de contacto */
+.contacto-main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.redes_footer img {
-    width: 30px;
-    height: 30px;
+.contacto-main h1 {
+    text-align: center;
+    margin-bottom: 30px;
 }
-/*-----------------CONTACTO----------------------*/
-section h1{
-    color: rgb(255, 255, 255);
-    align-items: center;
-    margin-left: 50%;
-}
-.form-container {
-    width: 100%;
-    height: 500px;
-    max-width: 700px;  
-    margin: 100px auto; /* Centra el formulario verticalmente */
-    background-image: url('../img/images\ \(1\).jfif'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+.contacto-form-container {
+    background-color: #F9F9F9;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
-    align-items: center;
-}
-label{ color: #fff;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+.contacto-form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contacto-form-container input[type="text"],
+.contacto-form-container input[type="email"],
+.contacto-form-container input[type="tel"],
+.contacto-form-container select,
+.contacto-form-container textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     border-radius: 5px;
     box-sizing: border-box;
-  }
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
+}
 
-/*----------------------NOSOTROS----------------------*/
-.perfil{
-    margin-left: 10px;
+.contacto-form-container textarea {
+    resize: vertical;
+}
+
+.contacto-form-container input[type="checkbox"] {
+    display: inline;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
-
-p{
-    color: #fff;
-    margin-left: 30px;    
-}
-h1{
-    color: #fff;
-    margin-left: 40%;
-    align-items: center;
-}
-.creadores{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.quienes-somos {
-    border: 2px solid #1c03ff;
-    border-radius: 5px;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-
-}
-
-.quienes-somos p {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ffffff;
-    margin-right: 15px;
-}
-
-/* Media query para ajustar el ancho en dispositivos más pequeños */
-@media screen and (max-width: 768px) {
-    .quienes-somos {
-        width: 90%;
-    }
-}
-
-.google-maps {
-    text-align: center; 
-    margin-top: 20px;
-
-}
-
-.map-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 20px hsl(226, 97%, 56%)
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 400px;
+.contacto-form-container button[type="submit"] {
+    background-color: #FFAE00;
+    color: #FFF;
     border: none;
-    transition: transform 0.3s ease;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.google-maps:hover .map-container iframe {
-    transform: scale(1.50);
+.contacto-form-container button[type="submit"]:hover {
+    background-color: #FF8C00;
 }
 
-@media screen and (min-width: 768px) {
-    .map-container {
-        max-width: 800px;
-        margin: 0 auto;
+/* Estilos para errores de validación */
+.contacto-form-container input:invalid,
+.contacto-form-container select:invalid,
+.contacto-form-container textarea:invalid {
+    border-color: #FF0000;
+}
+
+.contacto-form-container input:invalid:focus,
+.contacto-form-container select:invalid:focus,
+.contacto-form-container textarea:invalid:focus {
+    outline: none;
+}
+
+.contacto-form-container .invalid-feedback {
+    color: #FF0000;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Estilos para éxito de validación */
+.contacto-form-container input:valid,
+.contacto-form-container select:valid,
+.contacto-form-container textarea:valid {
+    border-color: #00CC00;
+}
+
+.contacto-form-container input:valid:focus,
+.contacto-form-container select:valid:focus,
+.contacto-form-container textarea:valid:focus {
+    outline: none;
+}
+
+.contacto-form-container .valid-feedback {
+    color: #00CC00;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Media Queries */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .producto {
+        width: calc(50% - 40px);
     }
 }
-.linkedin-box {
-    width: 50px; /* Ancho aumentado */
-    height: 50px; /* Altura aumentada */
+
+/* Mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #FFD700;
+        padding: 10px;
+        box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header nav ul.show {
+        display: flex;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .banner {
+        padding: 50px 20px;
+    }
+
+    .producto {
+        width: 100%;
+    }
 }
