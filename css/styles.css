@@ -46,8 +46,9 @@ header {
 }
 
 .banner {
+    height: 400px;
     background-color: #FFD700;
-    background: url('../img/banner.png') no-repeat center center;
+    background: url('../img/Technoplace.png') no-repeat center center;
     background-size: cover;
     color: #FFF;
     text-align: center;
@@ -269,4 +270,8 @@ footer {
     .producto {
         width: 100%;
     }
+}
+.tres-cards{
+    display: flex;
+    justify-content: space-between;
 }
