@@ -1,0 +1,3 @@
+[submodule "cc-fs-python"]
+    path = cc-fs-python
+    url = https://github.com/mignesterovsky/cc-fs-python.git
