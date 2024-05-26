@@ -6,7 +6,18 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.fadeIn {
+    opacity: 0;
+    animation: fadeInAnimation ease 1s forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 header {
     background-color: #FFD700;
     color: #000;
@@ -119,6 +130,8 @@ footer {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    background: url('../img/Imagen-fondo-formulario.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .contacto-main h1 {
@@ -127,7 +140,7 @@ footer {
 }
 
 .contacto-form-container {
-    background-color: #F9F9F9;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
